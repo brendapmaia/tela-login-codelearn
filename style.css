@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-primaria: #8155ea
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 25px;
+}
+
+section:nth-child(1) {
+    background-color: var(--cor-primaria);
+}
+
+h1 {
+    color: var(--cor-primaria);
+    font-size: 27px;
+}
+
+form {
+    width: 100%;
+   display:flex;
+   flex-direction: column;
+   gap:20px;
+}
+
+input {
+    outline: none;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size:17px;
+    border-radius:5px;
+    border: 1.5px solid gray;
+}
+
+input:focus {
+    border-color: var(--cor-primaria);
+}
+
+button {
+    width: 100%;
+    background-color: var(--cor-primaria);
+    border: none;
+    height: 45px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+#olho-senha {
+    color: var(--cor-primaria);
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top:10px;
+}
+
+input[type="password"] {
+    padding-right: 45px;
+}
